@@ -1,0 +1,5 @@
+name = "recipe-api"
+main = "src/index.js"
+compatibility_date = "2023-04-28"
+account_id = "61e187ff03667b20f7a4c13c6af0e9d1"
+workers_dev = true
