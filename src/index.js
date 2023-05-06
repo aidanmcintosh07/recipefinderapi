@@ -89,7 +89,6 @@ async function fetchRecipe(prompt, apiKey) {
 	});
 
 	const data = await response.json();
-	console.log(data);
 
 	// Check if the response from the API contains a valid recipe
 	if (!data.choices || !data.choices[0] || !data.choices[0].text) {
