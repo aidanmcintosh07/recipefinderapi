@@ -1,5 +1,5 @@
 require("dotenv").config();
-const apiKey = process.env.OPENAI_API_KEY;
+import { apiKey } from "./config";
 
 addEventListener("fetch", (event) => {
 	event.respondWith(handleRequest(event.request));
