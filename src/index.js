@@ -7,10 +7,11 @@ addEventListener("fetch", (event) => {
 
 async function handleRequest(request) {
 	const url = new URL(request.url);
-	const endpoint = url.pathname.split("/")[1];
+	const endpoint = url.pathname;
+	const queryParams = url.searchParams;
 
-	if (endpoint === "recipes") {
-		const ingredient = url.searchParams.get("ingredient");
+	if (endpoint === "/api/recipes") {
+		const ingredient = queryParams.get("ingredient");
 
 		if (!ingredient) {
 			return new Response("Ingredient not specified", { status: 400 });
