@@ -81,7 +81,7 @@ async function fetchRecipe(prompt, apiKey) {
 			max_tokens: 1024,
 			temperature: 0.5,
 			model: "text-davinci-002",
-			n: 3,
+			n: 1,
 			stop: null,
 		}),
 	});
