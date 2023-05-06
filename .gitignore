@@ -12,6 +12,8 @@ lerna-debug.log*
 
 report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
+src/config.js
+
 # Runtime data
 
 pids
@@ -170,3 +172,4 @@ dist
 
 .dev.vars
 .wrangler/
+
